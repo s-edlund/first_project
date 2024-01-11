@@ -1,5 +1,10 @@
 console.log(`Hello World`);
 
+const nargs = process.args.length;
+
+if(nargs < 2)
+   throw new Error(`insufficient argument count`);
+
 console.log()
 const mult = (a:number[][], b: number[][]): number[][] => {
    validate(b);
